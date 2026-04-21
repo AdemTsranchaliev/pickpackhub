@@ -21,7 +21,8 @@ rm -f dist/.DS_Store
 TMP="$(mktemp -d)"
 cp -R dist/. "$TMP/"
 cd "$TMP"
-git init -b gh-pages
+git init
+git checkout -B gh-pages
 git add -A
 git commit -m "Deploy static site to GitHub Pages ($(date -u +%Y-%m-%dT%H:%MZ))"
 
