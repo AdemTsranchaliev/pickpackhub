@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # After Netlify assigns a URL, set this in Site settings → Environment variables
+  # to your site URL (e.g. https://pickpackhub.netlify.app) for correct canonical/SEO.
+  # VITE_PUBLIC_SITE_URL = "https://YOUR-SUBDOMAIN.netlify.app"
