@@ -1,0 +1,247 @@
+export default {
+  nav: {
+    about: "À propos",
+    services: "Services",
+    partners: "Partenaires",
+    why: "Approche",
+    market: "Segments",
+    operations: "Opérations",
+    technology: "Systèmes",
+    launch: "Croissance",
+    contact: "Contact",
+    tagline: "3PL · FULFILLMENT",
+    cta: "Demander un devis",
+    ctaShort: "Devis",
+    menuAria: "Menu",
+    language: "Langue",
+  },
+  hero: {
+    chipProcess: "Processus documentés",
+    chip3pl: "3PL · UE",
+    chipChannels: "Canaux & transporteurs",
+    titleBefore: "Logistique pour le ",
+    titleHighlight: "commerce en ligne européen",
+    titleAfter: "",
+    subtitle:
+      "Entreposage, préparation de commandes, livraison et retours. Délais convenus, traçabilité et interlocuteur désigné pour vos opérations.",
+    ctaQuote: "Demander un devis",
+    ctaPartners: "Partenaires",
+    stats: [
+      { k: "UE", v: "Conformité & expédition" },
+      { k: "3PL", v: "De la réception à la livraison" },
+      { k: "Transporteurs", v: "5+ marques" },
+    ],
+    cardOverline: "En bref",
+    cardTitle: "Pour les marchands qui se développent dans l’UE",
+    cardBadge: "2024—2026",
+    cardBullets: [
+      "Entrepôt propre — coûts prévisibles et maîtrise des capacités",
+      "OMS, codes‑barres et étiquettes — un flux de la commande au transporteur",
+      "Econt, Speedy, DPD, GLS, DHL — selon ligne et contrat",
+      "Site UE pour fulfilment régional et mise en export",
+    ],
+    cardFootnote: "Nous dimensionnons les ressources selon vos volumes — avec planification amont, sans surprises.",
+  },
+  about: {
+    overline: "À propos",
+    title: "3PL et e‑commerce fulfilment pour l’UE depuis la Bulgarie",
+    body:
+      "Nous accompagnons les PME qui vendent des produits physiques en Europe. Stockage, picking, livraison et retours sur notre site, avec accent sur les processus, les systèmes et une responsabilité claire par compte client.",
+    tiles: [
+      { title: "Entrepôt propre", body: "Pas de loyer refacturé — coûts plus prévisibles et meilleur contrôle." },
+      { title: "Contact désigné", body: "Un interlocuteur opérationnel — pas de centre d’appel anonyme." },
+      { title: "UE", body: "Stockage et expédition alignés sur les exigences UE applicables." },
+    ],
+    promiseTitle: "Notre engagement",
+    promiseBody: "Communication claire, étapes traçables et respect de ce qui est convenu.",
+    trustOverline: "Sur le terrain",
+    trustTitle: "Entrepôt & fulfilment en images",
+    trustCaption:
+      "Un aperçu cohérent du type d’entreposage, de manutention et d’expédition autour duquel nous structurons nos processus.",
+    trustPhotos: [
+      { src: "/images/trust/warehouse.jpg", alt: "Intérieur d’entrepôt avec rayonnages et emplacements palettes" },
+      { src: "/images/trust/operations.jpg", alt: "Chariot élévateur dans l’allée d’un centre de distribution" },
+      { src: "/images/trust/fulfilment.jpg", alt: "Colis empilés sur étagères prêts pour l’expédition" },
+    ],
+  },
+  services: {
+    overline: "Services",
+    title: "Services modulaires",
+    intro: "Combinez entrepôt, flux sortant et retours selon vos besoins — dans un même contrat avec des responsabilités claires.",
+    list: [
+      { title: "Entrepôt", body: "Palettes et volume, emplacements codés, zones partagées ou dédiées selon contrat." },
+      {
+        title: "Préparation",
+        body: "Intégration avec Shopify, WooCommerce, eMAG, Amazon, etc. Emballage, étiquette et remise au transporteur selon spécification.",
+      },
+      { title: "Retours", body: "Réception, contrôle et statut. Informations structurées pour décider rapidement." },
+      {
+        title: "Livraison",
+        body: "Transporteurs nationaux et internationaux, dont Pan‑EU (ex. DPD, GLS, DHL). Étiquettes et suivi via l’OMS.",
+      },
+      { title: "Services à valeur ajoutée", body: "Emballage de marque, inserts, traitement spécial — sur demande préalable et paramètres convenus." },
+    ],
+  },
+  partners: {
+    logoAria: "Logo",
+    overline: "Partenaires",
+    title: "Transporteurs & intégrations",
+    intro:
+      "Ci‑dessous figurent des marques de transporteurs et de canaux de vente avec lesquels nous travaillons ou que nous pouvons intégrer. La disponibilité par ligne et contrat est confirmée lors du devis.",
+    couriersTitle: "Transporteurs & livraison",
+    couriersNote: "Les services actifs sont définis par le volume, la ligne et le périmètre contractuel.",
+    channelsTitle: "Systèmes & canaux",
+    channelsNote:
+      "Couche OMS/WMS pour commandes, stocks et étiquettes — reliée à vos canaux et aux services transporteurs retenus.",
+  },
+  why: {
+    overline: "Approche",
+    title: "Des opérations traçables",
+    intro: "Trois principes appliqués au quotidien avec nos clients.",
+    pillars: [
+      {
+        title: "Transparence",
+        text: "Entrepôt structuré et code‑barres au niveau article et expédition. Visibilité des statuts dans les canaux d’information convenus.",
+      },
+      {
+        title: "Contact direct",
+        text: "Équipe compacte et canaux de communication convenus. Réponses dans un délai raisonnable sur les sujets opérationnels.",
+      },
+      {
+        title: "Valeur UE",
+        text: "Site en Bulgarie dans l’UE — cadre réglementaire prévisible et coût total compétitif face à de nombreux hubs d’Europe occidentale.",
+      },
+    ],
+  },
+  market: {
+    overline: "Cibles",
+    title: "Où PickPackHub est particulièrement pertinent",
+    intro:
+      "Organisations vendant des produits physiques en ligne — des premiers volumes réguliers à un flux mid‑market durable vers l’UE.",
+    segments: [
+      {
+        title: "PME en Bulgarie & UE",
+        desc: "Commerce sans équipe entrepôt interne — fulfilment externalisé avec rôles et responsabilités clairs.",
+      },
+      {
+        title: "Marketplaces & multicanal",
+        desc: "eMAG, Amazon et autres canaux — consolidation via un nœud européen unique.",
+      },
+      {
+        title: "Marques D2C",
+        desc: "Délais, emballage et règles transporteurs convenus — alignés sur votre politique de marque.",
+      },
+    ],
+    regionalIntro:
+      "Un site UE en Bulgarie aide à consolider le fulfilment pour le marché unique — cadre réglementaire adapté, choix de transporteurs et opérations quotidiennes transparentes.",
+    regionalPoints: [
+      "Entrepôt et expédition depuis le territoire UE",
+      "Un hub pour marketplaces et multicanal — moins de ruptures entre intermédiaires",
+      "Processus convenus, traçabilité code‑barres et contact opérations nommé",
+      "Coût total compétitif face à de nombreux sites d’fulfilment d’Europe occidentale",
+    ],
+    regionalFocusTitle: "Fulfilment UE · Bulgarie",
+    focusOverline: "Focus",
+  },
+  operations: {
+    overline: "Opérations",
+    title: "Précision & traçabilité",
+    intro: "Code emplacement et code‑barres au niveau opération — moindre risque d’erreur en picking et emballage.",
+    warehouseTitle: "Entrepôt",
+    layoutItems: [
+      "Zones codées partagées pour petits comptes",
+      "Zones palettes pour débit élevé",
+      "Zone retours dédiée",
+      "Postes d’emballage avec contrôles selon spécification",
+    ],
+    orderFlowTitle: "Flux commande",
+    orderSteps: [
+      { label: "Réception", description: "Les commandes canal entrent dans l’OMS avec validation des données clés." },
+      { label: "Prélèvement", description: "Code‑barres et emplacement — selon vos règles de picking." },
+      { label: "Colis", description: "Selon votre spécification et points de contrôle internes." },
+      { label: "Transporteur", description: "Génération d’étiquette et remise au transporteur choisi." },
+      { label: "Suivi", description: "Statuts vers votre boutique et le client final dans le périmètre convenu." },
+    ],
+    returnsTitle: "Retours",
+    returnSteps: [
+      "Réception liée à la commande d’origine",
+      "Statut après contrôle : acceptable / endommagé / écart",
+      "Stockage en attente de votre décision — selon règles convenues",
+      "Rapport écrit court ou export système",
+    ],
+  },
+  technology: {
+    overline: "Systèmes",
+    title: "Intégration stable d’abord, puis montée en charge",
+    intro: "Nous commençons par une liaison fiable vers vos canaux et transporteurs. Nous ajoutons reporting et automatisation selon votre modèle.",
+    chipStart: "Démarrage",
+    chipScale: "Échelle",
+    omsTitle: "OMS / WMS",
+    omsBody: "Commandes, stocks et étiquettes dans un flux unique — reliés à vos canaux de vente et services transporteurs.",
+    customTitle: "Logiciel propriétaire",
+    customBody: "Tableaux de bord, reporting et API pour usage interne ou partenaires, y compris marque blanche si contractuellement prévu.",
+  },
+  launch: {
+    overline: "Croissance",
+    title: "Comment nous développons les partenariats",
+    phases: [
+      {
+        title: "Contact direct marché",
+        period: "1–3 mois",
+        text: "Échanges ciblés avec marchands et opérateurs, proposition claire et volumes pilotes avec KPI mesurables.",
+      },
+      {
+        title: "Réseau partenaires",
+        period: "3–9 mois",
+        text: "Travail avec agences, intégrateurs et recommandations — élargissement des accès à la demande qualifiée.",
+      },
+      {
+        title: "Focus régional",
+        period: "Année 2+",
+        text: "Initiatives dédiées aux chaînes et marchands qui font monter leur fulfilment UE — corridors renforcés, densité partenaires et onboarding reproductible.",
+      },
+    ],
+    month1Title: "Premiers 30 jours",
+    month1Intro: "Nous menons l’onboarding opérationnel en parallèle d’une prospection structurée.",
+    month1List: [
+      "Définition des processus et du profil transporteur",
+      "Premiers envois test ou réels",
+      "Pipeline de contacts et qualification des demandes",
+      "Test contrôlé de l’OMS et des canaux",
+    ],
+  },
+  contact: {
+    overline: "Contact",
+    title: "Demander un devis",
+    intro:
+      "Décrivez vos produits, le volume mensuel typique et les destinations principales. Nous répondrons avec des prochaines étapes concrètes et un délai de réponse indiqué.",
+    address: "Adresse",
+    addressValue: "Bulgarie (UE)",
+    email: "E‑mail",
+    phone: "Téléphone",
+    phonePlaceholder: "Facultatif",
+    formTitle: "Contactez‑nous",
+    labelName: "Nom complet",
+    labelCompany: "Société",
+    labelEmail: "E‑mail",
+    labelPhone: "Téléphone",
+    labelMessage: "Produits, volume (commandes/mois) et marchés",
+    submit: "Ouvrir le client mail",
+    submitHint: "L’envoi ouvre votre client de messagerie avec objet et corps préremplis.",
+    validation: "Veuillez saisir votre e‑mail et une brève description de la demande.",
+    toastClient: "Si le client mail ne s’ouvre pas automatiquement, vérifiez les paramètres de l’appareil.",
+    mailSubject: "PickPackHub — demande",
+    mailLines: { name: "Nom", company: "Société", email: "E‑mail", phone: "Tél." },
+  },
+  seo: {
+    title: "PickPackHub · 3PL & e‑commerce fulfilment pour l’UE | Bulgarie",
+    description:
+      "PickPackHub — 3PL depuis la Bulgarie pour l’UE : entreposage, préparation, retours, transporteurs (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Demander un devis.",
+    keywords: "PickPackHub, pickpackhub, 3PL Bulgarie, fulfilment UE, e‑commerce, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
+  },
+  footer: {
+    title: "PickPackHub — logistique & fulfilment de commandes",
+    subtitle: "Bulgarie · 3PL pour l’e‑commerce UE",
+    copyright: "© {year} PickPackHub · 2024–2026",
+  },
+};
