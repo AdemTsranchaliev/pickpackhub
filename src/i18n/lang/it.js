@@ -7,7 +7,7 @@ export default {
     market: "Segmenti",
     operations: "Operazioni",
     technology: "Sistemi",
-    launch: "Crescita",
+    launch: "Partnership",
     contact: "Contatti",
     tagline: "3PL · FULFILLMENT",
     cta: "Richiedi un preventivo",
@@ -23,7 +23,7 @@ export default {
     titleHighlight: "e‑commerce europeo",
     titleAfter: "",
     subtitle:
-      "Magazzino, fulfillment, consegne e resi. Tempistiche concordate, tracciabilità e referente operativo dedicato al tuo account. Al momento serviamo Bulgaria, Grecia e Romania.",
+      "Fulfillment per Bulgaria, Grecia e Romania: magazzino, picking, consegne e resi — processi chiari, tracciabilità e referente dedicato al tuo account.",
     ctaQuote: "Richiedi un preventivo",
     ctaPartners: "Partner",
     stats: [
@@ -32,21 +32,21 @@ export default {
       { k: "Corrieri", v: "5+ brand" },
     ],
     cardOverline: "In sintesi",
-    cardTitle: "Per merchant in crescita nell’UE",
+    cardTitle: "Quando i tuoi clienti finali sono in Bulgaria, Grecia o Romania",
     cardBadge: "2024—2026",
     cardBullets: [
       "Magazzino proprio — costi prevedibili e controllo capacità",
       "OMS, codice a barre ed etichette — flusso unico dall’ordine al corriere",
       "Econt, Speedy, DPD, GLS, DHL — in base a tratta e contratto",
-      "Uscite per ora: Bulgaria, Grecia e Romania — base UE per crescere",
+      "Fulfillment in uscita verso Bulgaria, Grecia e Romania — tratte e corrieri definiti in preventivo e contratto",
     ],
-    cardFootnote: "Scaliamo le risorse con i tuoi volumi — con pianificazione anticipata, senza sorprese.",
+    cardFootnote: "Volumi, tempistiche e responsabilità concordati in anticipo — operiamo nel perimetro contrattuale.",
   },
   about: {
     overline: "Chi siamo",
-    title: "3PL e fulfillment e‑commerce per l’UE dalla Bulgaria",
+    title: "Fulfillment per Bulgaria, Grecia e Romania dal nostro magazzino in Bulgaria",
     body:
-      "Supportiamo PMI che vendono beni fisici in Europa. Stoccaggio, picking, consegne e resi nella nostra struttura, con focus su processi, sistemi e responsabilità chiara per ogni account. Oggi il focus operativo è Bulgaria, Grecia e Romania.",
+      "Aiutiamo brand e retailer a spedire beni fisici a clienti finali in Bulgaria, Grecia e Romania. Stoccaggio, picking, consegne e resi dalla nostra struttura in Bulgaria (UE), con processi e sistemi chiari e un referente nominato per il quotidiano del tuo account.",
     tiles: [
       { title: "Magazzino proprio", body: "Nessun affitto rifatturato — costi più prevedibili e maggiore controllo." },
       { title: "Referente dedicato", body: "Per le questioni operative — non un call center anonimo." },
@@ -109,7 +109,7 @@ export default {
       },
       {
         title: "Valore UE",
-        text: "Base in Bulgaria nell’UE — quadro normativo prevedibile e costo totale competitivo rispetto a molti hub dell’Europa occidentale.",
+        text: "Magazzino in Bulgaria (UE) — quadro normativo chiaro per spedizioni verso Bulgaria, Grecia e Romania, con condizioni concordate per iscritto.",
       },
     ],
   },
@@ -117,15 +117,15 @@ export default {
     overline: "Target",
     title: "Dove PickPackHub è particolarmente indicato",
     intro:
-      "Organizzazioni che vendono prodotti fisici online — dai primi volumi stabili a un flusso mid‑market sostenibile verso l’UE.",
+      "Merchant online e brand che cercano fulfillment affidabile dal magazzino al cliente in Bulgaria, Grecia o Romania — senza team logistico interno.",
     segments: [
       {
-        title: "PMI in Bulgaria e UE",
-        desc: "Commercio senza team magazzino interno — fulfillment esternalizzato con ruoli e responsabilità chiare.",
+        title: "PMI e brand che spediscono verso questi mercati",
+        desc: "Fulfillment esternalizzato con ruoli chiari, ambito contrattuale e responsabilità — niente call center anonimo.",
       },
       {
         title: "Marketplace e multicanale",
-        desc: "eMAG, Amazon e altri canali — consolidamento tramite un solo nodo UE.",
+        desc: "eMAG, Amazon e altri canali — un partner di fulfillment per Bulgaria, Grecia e Romania dove concordato in contratto.",
       },
       {
         title: "Brand D2C",
@@ -133,12 +133,12 @@ export default {
       },
     ],
     regionalIntro:
-      "Al momento evadiamo ordini per Bulgaria, Grecia e Romania. Il nostro hub UE in Bulgaria consolida le operazioni per questi mercati — quadro normativo coerente, scelta corrieri e gestione quotidiana trasparente.",
+      "PickPackHub evade ordini da un magazzino in Bulgaria (UE) verso Bulgaria, Grecia e Romania. Tratte, corrieri e tempistiche sono definiti in contratto — sai chi fa cosa prima del primo pacco.",
     regionalPoints: [
-      "Magazzino e spedizione da territorio UE",
-      "Un hub per marketplace e multicanale — meno passaggi frammentati",
-      "Processi concordati, tracciabilità barcode e referente operativo dedicato",
-      "Costo totale competitivo rispetto a molte sedi di fulfillment in Europa occidentale",
+      "Magazzino e spedizione da territorio UE — allineati ai requisiti applicabili",
+      "Un partner di fulfillment per i tre Paesi nei servizi attivati per contratto",
+      "Tracciabilità barcode e stati nei canali informativi concordati",
+      "Referente operativo nominato e tempi di risposta concordati per il quotidiano",
     ],
     regionalFocusTitle: "Copertura · Bulgaria, Grecia, Romania",
     focusOverline: "Focus",
@@ -172,17 +172,17 @@ export default {
   },
   technology: {
     overline: "Sistemi",
-    title: "Prima integrazione stabile, poi scala",
+    title: "Prima integrazione stabile, poi automazione e reporting",
     intro: "Partiamo da un collegamento affidabile a canali e corrieri. Se necessario, aggiungiamo reporting e automazioni sul vostro modello.",
     chipStart: "Avvio",
-    chipScale: "Scala",
+    chipScale: "Affinare",
     omsTitle: "OMS / WMS",
     omsBody: "Ordini, giacenze ed etichette in un unico flusso — collegati ai canali di vendita e ai servizi corriere utilizzati.",
     customTitle: "Software proprietario",
     customBody: "Dashboard, report e API per uso interno o partner, incluso white label se contrattualmente previsto.",
   },
   launch: {
-    overline: "Crescita",
+    overline: "Partnership",
     title: "Come sviluppiamo i partnership",
     phases: [
       {
@@ -196,9 +196,9 @@ export default {
         text: "Collaborazione con agenzie, integratori e referral — ampliamento dei percorsi verso domanda qualificata.",
       },
       {
-        title: "Focus regionale",
-        period: "Anno 2+",
-        text: "Iniziative dedicate a catene e merchant che scalano il fulfillment UE — corridoi più profondi, rete partner più densa e onboarding ripetibile.",
+        title: "Partnership di lungo periodo",
+        period: "Dopo il go‑live",
+        text: "Revisioni periodiche di processi e qualità; variazioni di volume solo entro capacità concordata in anticipo — nessun impegno fuori dall’ambito contrattuale.",
       },
     ],
     month1Title: "Primi 30 giorni",
@@ -214,7 +214,7 @@ export default {
     overline: "Contatti",
     title: "Richiedi un preventivo",
     intro:
-      "Descrivi prodotti, volume mensile tipico e destinazioni principali. Risponderemo con passi successivi concreti e una tempistica di risposta indicata.",
+      "Descrivi prodotti, volume mensile tipico e se le consegne sono verso Bulgaria, Grecia e/o Romania. Risponderemo con passi successivi concreti e una tempistica di risposta indicata.",
     address: "Indirizzo",
     addressValue: "Bulgaria (UE)",
     email: "E‑mail",
@@ -236,7 +236,7 @@ export default {
   seo: {
     title: "PickPackHub · 3PL e fulfillment e‑commerce | Bulgaria, Grecia, Romania",
     description:
-      "PickPackHub — 3PL dalla Bulgaria. Al momento Bulgaria, Grecia e Romania: magazzino, fulfillment, resi, corrieri (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Richiedi un preventivo.",
+      "PickPackHub — fulfillment per Bulgaria, Grecia e Romania da magazzino in Bulgaria (UE). Magazzino, picking, resi, corrieri secondo contratto (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Richiedi un preventivo.",
     keywords: "PickPackHub, pickpackhub, 3PL Bulgaria, Grecia, Romania, fulfillment UE, e‑commerce, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
   },
   footer: {

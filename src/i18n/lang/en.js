@@ -7,7 +7,7 @@ export default {
     market: "Segments",
     operations: "Operations",
     technology: "Systems",
-    launch: "Growth",
+    launch: "Partnerships",
     contact: "Contact",
     tagline: "3PL · FULFILLMENT",
     cta: "Request a quote",
@@ -23,7 +23,7 @@ export default {
     titleHighlight: "European",
     titleAfter: "e‑merchant",
     subtitle:
-      "Warehousing, fulfilment, delivery and returns. Agreed timelines, traceability and a named account contact for your operations. We currently serve Bulgaria, Greece and Romania.",
+      "Fulfilment for Bulgaria, Greece and Romania: warehousing, pick & pack, delivery and returns — clear processes, traceability and a named contact for your account.",
     ctaQuote: "Request a quote",
     ctaPartners: "Partners",
     stats: [
@@ -32,21 +32,21 @@ export default {
       { k: "Carriers", v: "5+ brands" },
     ],
     cardOverline: "At a glance",
-    cardTitle: "For merchants scaling in the EU",
+    cardTitle: "When your end customers are in Bulgaria, Greece or Romania",
     cardBadge: "2024—2026",
     cardBullets: [
       "Own warehouse — predictable cost and capacity control",
       "OMS, barcode and labels — one flow from order to carrier handover",
       "Econt, Speedy, DPD, GLS, DHL — matched to lane and contract",
-      "Outbound focus for now: Bulgaria, Greece and Romania — EU base to grow further",
+      "Outbound fulfilment for Bulgaria, Greece and Romania — lanes and carriers are set in the quote and contract",
     ],
-    cardFootnote: "We scale resource with your volumes — with advance planning, not surprises.",
+    cardFootnote: "Volume, timelines and responsibilities are agreed upfront — we operate within what we contract.",
   },
   about: {
     overline: "About us",
-    title: "3PL and e‑commerce fulfilment for the EU from Bulgaria",
+    title: "Fulfilment for Bulgaria, Greece and Romania from our warehouse in Bulgaria",
     body:
-      "We support small and mid‑sized merchants selling physical goods in Europe. Warehousing, pick & pack, delivery and returns run from our own facility, with emphasis on process, systems and clear ownership of each client account. Our operational focus today is Bulgaria, Greece and Romania.",
+      "We help brands and retailers ship physical goods to end customers in Bulgaria, Greece and Romania. Warehousing, pick & pack, delivery and returns run from our facility in Bulgaria (EU), with clear processes, systems and a named contact for day‑to‑day operations on your account.",
     tiles: [
       { title: "Own warehouse", body: "No pass‑through rent to you — more predictable cost and stronger control." },
       { title: "Named contact", body: "A dedicated operations contact — not an anonymous call queue." },
@@ -118,7 +118,7 @@ export default {
       },
       {
         title: "EU value",
-        text: "A Bulgaria base inside the EU — predictable regulation and a competitive total‑cost position versus many Western European hubs.",
+        text: "A warehouse in Bulgaria (EU) — a familiar regulatory framework for shipments to Bulgaria, Greece and Romania, with terms agreed in writing.",
       },
     ],
   },
@@ -126,15 +126,15 @@ export default {
     overline: "Who we serve",
     title: "Where PickPackHub is a strong fit",
     intro:
-      "Organisations selling physical products online — from first steady volumes to a sustainable mid‑market flow into the EU.",
+      "E‑commerce and multichannel merchants who need dependable warehouse‑to‑door execution in Bulgaria, Greece or Romania — without building an in‑house logistics team.",
     segments: [
       {
-        title: "SMEs in Bulgaria & the EU",
-        desc: "Trading without an in‑house warehouse team — outsourced fulfilment with clear roles and accountability.",
+        title: "SMEs and brands shipping to these markets",
+        desc: "Outsourced fulfilment with clear roles, contracted scope and accountability — not an anonymous call centre.",
       },
       {
         title: "Marketplaces & multichannel",
-        desc: "eMAG, Amazon and other channels — consolidating fulfilment through one EU node.",
+        desc: "eMAG, Amazon and other channels — one fulfilment partner for Bulgaria, Greece and Romania where agreed in the contract.",
       },
       {
         title: "D2C brands",
@@ -142,12 +142,12 @@ export default {
       },
     ],
     regionalIntro:
-      "We currently fulfil orders for Bulgaria, Greece and Romania. Our Bulgaria (EU) hub helps consolidate operations for these markets — aligned regulation, carrier choice and transparent day‑to‑day handling.",
+      "PickPackHub fulfils orders from a warehouse in Bulgaria (EU) to Bulgaria, Greece and Romania. Lanes, carriers and timelines are spelled out in the agreement — you know who does what before the first parcel leaves.",
     regionalPoints: [
-      "Warehouse and dispatch from EU territory",
-      "One hub for marketplaces and multichannel — fewer fragmented handovers",
-      "Agreed processes, barcode traceability and a named operations contact",
-      "Competitive total cost versus many Western European fulfilment locations",
+      "Warehouse and dispatch from EU territory — aligned with applicable requirements",
+      "One fulfilment partner for the three countries within the services you activate under contract",
+      "Barcode traceability and status updates in the information channels we agree",
+      "Named operations contact and agreed response windows for day‑to‑day issues",
     ],
     regionalFocusTitle: "Coverage · Bulgaria, Greece, Romania",
     focusOverline: "Focus",
@@ -181,10 +181,10 @@ export default {
   },
   technology: {
     overline: "Systems",
-    title: "Stable integration first, then scale",
+    title: "Stable integration first, then automation & reporting",
     intro: "We start with a reliable link to your channels and carriers. Where needed, we add reporting and automation around your model.",
     chipStart: "Start",
-    chipScale: "Scale",
+    chipScale: "Refine",
     omsTitle: "OMS / WMS",
     omsBody:
       "Orders, inventory and labels in one flow — connected to the sales channels and carrier services you use.",
@@ -192,7 +192,7 @@ export default {
     customBody: "Dashboards, reporting and API for internal or partner models, including white‑label where contractually agreed.",
   },
   launch: {
-    overline: "Growth",
+    overline: "Partnerships",
     title: "How we develop partnerships",
     phases: [
       {
@@ -206,9 +206,9 @@ export default {
         text: "Work with agencies, integrators and referrals — widening routes to qualified demand.",
       },
       {
-        title: "Regional focus",
-        period: "Year 2+",
-        text: "Dedicated initiatives for supply chains and merchants scaling EU fulfilment — deeper lanes, partner density and repeatable onboarding.",
+        title: "Long‑term partnerships",
+        period: "After go‑live",
+        text: "Periodic process and quality reviews; volume changes only within capacity we agree in advance — no commitments outside the contracted scope.",
       },
     ],
     month1Title: "First 30 days",
@@ -224,7 +224,7 @@ export default {
     overline: "Contact",
     title: "Request a quote",
     intro:
-      "Describe your products, typical monthly volume and main destinations. We will reply with concrete next steps and a stated response timeframe.",
+      "Describe your products, typical monthly volume and whether deliveries are to Bulgaria, Greece and/or Romania. We will reply with concrete next steps and a stated response timeframe.",
     address: "Address",
     addressValue: "Bulgaria (EU)",
     email: "Email",
@@ -246,7 +246,7 @@ export default {
   seo: {
     title: "PickPackHub · 3PL & e‑commerce fulfilment | Bulgaria, Greece, Romania",
     description:
-      "PickPackHub — 3PL from Bulgaria. We currently serve Bulgaria, Greece and Romania: warehousing, pick & pack, returns, carriers (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Request a quote.",
+      "PickPackHub — fulfilment for Bulgaria, Greece and Romania from a warehouse in Bulgaria (EU). Warehousing, pick & pack, returns, carriers as contracted (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Request a quote.",
     keywords:
       "PickPackHub, pickpackhub, 3PL Bulgaria, Greece, Romania, EU fulfilment, e‑commerce warehouse, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
   },
