@@ -23,7 +23,7 @@ export default {
     titleHighlight: "commerce en ligne européen",
     titleAfter: "",
     subtitle:
-      "Entreposage, préparation de commandes, livraison et retours. Délais convenus, traçabilité et interlocuteur désigné pour vos opérations.",
+      "Entreposage, préparation de commandes, livraison et retours. Délais convenus, traçabilité et interlocuteur désigné pour vos opérations. Nous couvrons actuellement la Bulgarie, la Grèce et la Roumanie.",
     ctaQuote: "Demander un devis",
     ctaPartners: "Partenaires",
     stats: [
@@ -38,7 +38,7 @@ export default {
       "Entrepôt propre — coûts prévisibles et maîtrise des capacités",
       "OMS, codes‑barres et étiquettes — un flux de la commande au transporteur",
       "Econt, Speedy, DPD, GLS, DHL — selon ligne et contrat",
-      "Site UE pour fulfilment régional et mise en export",
+      "Sortants pour l’instant : Bulgarie, Grèce et Roumanie — base UE pour grandir",
     ],
     cardFootnote: "Nous dimensionnons les ressources selon vos volumes — avec planification amont, sans surprises.",
   },
@@ -46,7 +46,7 @@ export default {
     overline: "À propos",
     title: "3PL et e‑commerce fulfilment pour l’UE depuis la Bulgarie",
     body:
-      "Nous accompagnons les PME qui vendent des produits physiques en Europe. Stockage, picking, livraison et retours sur notre site, avec accent sur les processus, les systèmes et une responsabilité claire par compte client.",
+      "Nous accompagnons les PME qui vendent des produits physiques en Europe. Stockage, picking, livraison et retours sur notre site, avec accent sur les processus, les systèmes et une responsabilité claire par compte client. Notre focus opérationnel aujourd’hui : Bulgarie, Grèce et Roumanie.",
     tiles: [
       { title: "Entrepôt propre", body: "Pas de loyer refacturé — coûts plus prévisibles et meilleur contrôle." },
       { title: "Contact désigné", body: "Un interlocuteur opérationnel — pas de centre d’appel anonyme." },
@@ -133,14 +133,14 @@ export default {
       },
     ],
     regionalIntro:
-      "Un site UE en Bulgarie aide à consolider le fulfilment pour le marché unique — cadre réglementaire adapté, choix de transporteurs et opérations quotidiennes transparentes.",
+      "Nous assurons actuellement le fulfilment vers la Bulgarie, la Grèce et la Roumanie. Notre site UE en Bulgarie consolide les opérations pour ces marchés — cadre réglementaire adapté, choix de transporteurs et gestion quotidienne transparente.",
     regionalPoints: [
       "Entrepôt et expédition depuis le territoire UE",
       "Un hub pour marketplaces et multicanal — moins de ruptures entre intermédiaires",
       "Processus convenus, traçabilité code‑barres et contact opérations nommé",
       "Coût total compétitif face à de nombreux sites d’fulfilment d’Europe occidentale",
     ],
-    regionalFocusTitle: "Fulfilment UE · Bulgarie",
+    regionalFocusTitle: "Couverture · Bulgarie, Grèce, Roumanie",
     focusOverline: "Focus",
   },
   operations: {
@@ -234,14 +234,14 @@ export default {
     mailLines: { name: "Nom", company: "Société", email: "E‑mail", phone: "Tél." },
   },
   seo: {
-    title: "PickPackHub · 3PL & e‑commerce fulfilment pour l’UE | Bulgarie",
+    title: "PickPackHub · 3PL & e‑commerce fulfilment | Bulgarie, Grèce, Roumanie",
     description:
-      "PickPackHub — 3PL depuis la Bulgarie pour l’UE : entreposage, préparation, retours, transporteurs (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Demander un devis.",
-    keywords: "PickPackHub, pickpackhub, 3PL Bulgarie, fulfilment UE, e‑commerce, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
+      "PickPackHub — 3PL depuis la Bulgarie. Actuellement Bulgarie, Grèce et Roumanie : entreposage, préparation, retours, transporteurs (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Demander un devis.",
+    keywords: "PickPackHub, pickpackhub, 3PL Bulgarie, Grèce, Roumanie, fulfilment UE, e‑commerce, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
   },
   footer: {
     title: "PickPackHub — logistique & fulfilment de commandes",
-    subtitle: "Bulgarie · 3PL pour l’e‑commerce UE",
+    subtitle: "Bulgarie, Grèce, Roumanie · 3PL e‑commerce (UE)",
     copyright: "© {year} PickPackHub · 2024–2026",
   },
 };

@@ -23,7 +23,7 @@ export default {
     titleHighlight: "European",
     titleAfter: "e‑merchant",
     subtitle:
-      "Warehousing, fulfilment, delivery and returns. Agreed timelines, traceability and a named account contact for your operations.",
+      "Warehousing, fulfilment, delivery and returns. Agreed timelines, traceability and a named account contact for your operations. We currently serve Bulgaria, Greece and Romania.",
     ctaQuote: "Request a quote",
     ctaPartners: "Partners",
     stats: [
@@ -38,7 +38,7 @@ export default {
       "Own warehouse — predictable cost and capacity control",
       "OMS, barcode and labels — one flow from order to carrier handover",
       "Econt, Speedy, DPD, GLS, DHL — matched to lane and contract",
-      "EU location for regional fulfilment and export staging",
+      "Outbound focus for now: Bulgaria, Greece and Romania — EU base to grow further",
     ],
     cardFootnote: "We scale resource with your volumes — with advance planning, not surprises.",
   },
@@ -46,7 +46,7 @@ export default {
     overline: "About us",
     title: "3PL and e‑commerce fulfilment for the EU from Bulgaria",
     body:
-      "We support small and mid‑sized merchants selling physical goods in Europe. Warehousing, pick & pack, delivery and returns run from our own facility, with emphasis on process, systems and clear ownership of each client account.",
+      "We support small and mid‑sized merchants selling physical goods in Europe. Warehousing, pick & pack, delivery and returns run from our own facility, with emphasis on process, systems and clear ownership of each client account. Our operational focus today is Bulgaria, Greece and Romania.",
     tiles: [
       { title: "Own warehouse", body: "No pass‑through rent to you — more predictable cost and stronger control." },
       { title: "Named contact", body: "A dedicated operations contact — not an anonymous call queue." },
@@ -142,14 +142,14 @@ export default {
       },
     ],
     regionalIntro:
-      "A Bulgaria (EU) node helps merchants consolidate fulfilment for the single market — aligned regulation, carrier choice and transparent day‑to‑day operations.",
+      "We currently fulfil orders for Bulgaria, Greece and Romania. Our Bulgaria (EU) hub helps consolidate operations for these markets — aligned regulation, carrier choice and transparent day‑to‑day handling.",
     regionalPoints: [
       "Warehouse and dispatch from EU territory",
       "One hub for marketplaces and multichannel — fewer fragmented handovers",
       "Agreed processes, barcode traceability and a named operations contact",
       "Competitive total cost versus many Western European fulfilment locations",
     ],
-    regionalFocusTitle: "EU fulfilment · Bulgaria",
+    regionalFocusTitle: "Coverage · Bulgaria, Greece, Romania",
     focusOverline: "Focus",
   },
   operations: {
@@ -244,15 +244,15 @@ export default {
     mailLines: { name: "Name", company: "Company", email: "Email", phone: "Phone" },
   },
   seo: {
-    title: "PickPackHub · 3PL & e‑commerce fulfilment for the EU | Bulgaria",
+    title: "PickPackHub · 3PL & e‑commerce fulfilment | Bulgaria, Greece, Romania",
     description:
-      "PickPackHub — EU‑focused 3PL from Bulgaria: warehousing, pick & pack, returns, carriers (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon integrations. Request a quote.",
+      "PickPackHub — 3PL from Bulgaria. We currently serve Bulgaria, Greece and Romania: warehousing, pick & pack, returns, carriers (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Request a quote.",
     keywords:
-      "PickPackHub, pickpackhub, 3PL Bulgaria, EU fulfilment, e‑commerce warehouse, Econt, Speedy, DPD, GLS, DHL, OMS, WMS, cross‑border EU",
+      "PickPackHub, pickpackhub, 3PL Bulgaria, Greece, Romania, EU fulfilment, e‑commerce warehouse, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
   },
   footer: {
     title: "PickPackHub — logistics & order fulfilment",
-    subtitle: "Bulgaria · 3PL for EU e‑commerce",
+    subtitle: "Bulgaria, Greece, Romania · 3PL for e‑commerce (EU)",
     copyright: "© {year} PickPackHub · 2024–2026",
   },
 };

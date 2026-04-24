@@ -119,7 +119,7 @@ export default function SeoHead() {
           url: SITE_URL,
           logo: logoUrl,
           email: CONTACT_EMAIL,
-          areaServed: ["European Union", "Bulgaria"],
+          areaServed: ["Bulgaria", "Greece", "Romania", "European Union"],
           knowsAbout: ["Third-party logistics", "E-commerce fulfilment", "Warehousing", "Cross-border EU shipping"],
         },
         {

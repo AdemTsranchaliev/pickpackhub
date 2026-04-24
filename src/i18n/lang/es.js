@@ -23,7 +23,7 @@ export default {
     titleHighlight: "e‑commerce europeo",
     titleAfter: "",
     subtitle:
-      "Almacén, fulfillment, entregas y devoluciones. Plazos acordados, trazabilidad y un interlocutor designado para sus operaciones.",
+      "Almacén, fulfillment, entregas y devoluciones. Plazos acordados, trazabilidad y un interlocutor designado para sus operaciones. Por ahora atendemos Bulgaria, Grecia y Rumanía.",
     ctaQuote: "Solicitar presupuesto",
     ctaPartners: "Socios",
     stats: [
@@ -38,7 +38,7 @@ export default {
       "Almacén propio — costes previsibles y control de capacidad",
       "OMS, código de barras y etiquetas — un flujo desde el pedido al transportista",
       "Econt, Speedy, DPD, GLS, DHL — según ruta y contrato",
-      "Ubicación en la UE para fulfillment regional y staging de exportación",
+      "Salidas por ahora: Bulgaria, Grecia y Rumanía — base en la UE para crecer",
     ],
     cardFootnote: "Escalamos recursos con sus volúmenes — con planificación previa, sin sorpresas.",
   },
@@ -46,7 +46,7 @@ export default {
     overline: "Sobre nosotros",
     title: "3PL y fulfillment de e‑commerce para la UE desde Bulgaria",
     body:
-      "Apoyamos a pymes que venden productos físicos en Europa. Almacenamiento, picking, entregas y devoluciones en nuestra instalación, con foco en procesos, sistemas y responsabilidad clara por cuenta de cliente.",
+      "Apoyamos a pymes que venden productos físicos en Europa. Almacenamiento, picking, entregas y devoluciones en nuestra instalación, con foco en procesos, sistemas y responsabilidad clara por cuenta de cliente. Hoy nuestro foco operativo es Bulgaria, Grecia y Rumanía.",
     tiles: [
       { title: "Almacén propio", body: "Sin repercusión de alquiler — costes más previsibles y mayor control." },
       { title: "Contacto designado", body: "Para asuntos operativos — no una centralita anónima." },
@@ -133,14 +133,14 @@ export default {
       },
     ],
     regionalIntro:
-      "Un nodo en Bulgaria (UE) ayuda a consolidar el fulfillment para el mercado único — marco regulatorio alineado, elección de transportistas y operativa diaria transparente.",
+      "Actualmente damos fulfillment para Bulgaria, Grecia y Rumanía. Nuestro nodo en Bulgaria (UE) consolida la operativa en esos mercados — marco regulatorio alineado, elección de transportistas y día a día transparente.",
     regionalPoints: [
       "Almacén y envíos desde territorio de la UE",
       "Un hub para marketplaces y multicanal — menos entregas fragmentadas",
       "Procesos acordados, trazabilidad por código de barras y contacto operativo asignado",
       "Coste total competitivo frente a muchas ubicaciones de fulfillment en Europa occidental",
     ],
-    regionalFocusTitle: "Fulfillment UE · Bulgaria",
+    regionalFocusTitle: "Cobertura · Bulgaria, Grecia, Rumanía",
     focusOverline: "Enfoque",
   },
   operations: {
@@ -234,14 +234,14 @@ export default {
     mailLines: { name: "Nombre", company: "Empresa", email: "Correo", phone: "Tel." },
   },
   seo: {
-    title: "PickPackHub · 3PL y fulfillment e‑commerce para la UE | Bulgaria",
+    title: "PickPackHub · 3PL y fulfillment e‑commerce | Bulgaria, Grecia, Rumanía",
     description:
-      "PickPackHub — 3PL desde Bulgaria para la UE: almacén, fulfillment, devoluciones, transportistas (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Solicitar presupuesto.",
-    keywords: "PickPackHub, pickpackhub, 3PL Bulgaria, fulfillment UE, e‑commerce, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
+      "PickPackHub — 3PL desde Bulgaria. Por ahora Bulgaria, Grecia y Rumanía: almacén, fulfillment, devoluciones, transportistas (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Solicitar presupuesto.",
+    keywords: "PickPackHub, pickpackhub, 3PL Bulgaria, Grecia, Rumanía, fulfillment UE, e‑commerce, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
   },
   footer: {
     title: "PickPackHub — logística y fulfillment de pedidos",
-    subtitle: "Bulgaria · 3PL para e‑commerce en la UE",
+    subtitle: "Bulgaria, Grecia, Rumanía · 3PL e‑commerce (UE)",
     copyright: "© {year} PickPackHub · 2024–2026",
   },
 };

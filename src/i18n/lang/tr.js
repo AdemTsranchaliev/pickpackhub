@@ -23,7 +23,7 @@ export default {
     titleHighlight: "Avrupa",
     titleAfter: " e‑ticaretçileri için lojistik",
     subtitle:
-      "Depolama, sipariş karşılama, teslimat ve iadeler. Mutabık kalınan süreler, izlenebilirlik ve operasyonlarınız için adı geçen yetkili kişi.",
+      "Depolama, sipariş karşılama, teslimat ve iadeler. Mutabık kalınan süreler, izlenebilirlik ve operasyonlarınız için adı geçen yetkili kişi. Şu anda Bulgaristan, Yunanistan ve Romanya’ya hizmet veriyoruz.",
     ctaQuote: "Teklif talebi",
     ctaPartners: "Ortaklar",
     stats: [
@@ -38,7 +38,7 @@ export default {
       "Kendi depomuz — öngörülebilir maliyet ve kapasite kontrolü",
       "OMS, barkod ve etiketler — siparişten kargoya tek akış",
       "Econt, Speedy, DPD, GLS, DHL — hat ve sözleşmeye göre",
-      "Bölgesel fulfilment ve ihracat için AB lokasyonu",
+      "Şimdilik çıkışlar: Bulgaristan, Yunanistan ve Romanya — büyüme için AB üssü",
     ],
     cardFootnote: "Hacminize göre kaynak planlaması — önceden mutabakat, sürpriz yok.",
   },
@@ -46,7 +46,7 @@ export default {
     overline: "Hakkımızda",
     title: "Bulgaristan’dan AB için 3PL ve e‑ticaret fulfilment’ı",
     body:
-      "Avrupa’da fiziksel ürün satan KOBİ’lere destek veriyoruz. Depolama, toplama‑paketleme, teslimat ve iadeler kendi tesisimizde; süreç, sistemler ve her müşteri hesabında net sorumluluk ön plandadır.",
+      "Avrupa’da fiziksel ürün satan KOBİ’lere destek veriyoruz. Depolama, toplama‑paketleme, teslimat ve iadeler kendi tesisimizde; süreç, sistemler ve her müşteri hesabında net sorumluluk ön plandadır. Operasyonel odağımız şu an Bulgaristan, Yunanistan ve Romanya’dadır.",
     tiles: [
       { title: "Kendi depomuz", body: "Size yansıtılan kira yok — daha öngörülebilir maliyet ve daha güçlü kontrol." },
       { title: "Adı geçen yetkili", body: "Operasyon sorularınız için atanmış iletişim — anonim çağrı merkezi değil." },
@@ -123,7 +123,7 @@ export default {
       { title: "D2C markalar", desc: "Mutabık teslim süreleri, ambalaj ve kargo kuralları — marka politikasıyla uyumlu." },
     ],
     turkeyIntro:
-      "Türkiye’den AB’ye ihracatta Bulgaristan’dan fulfilment birçok hatta müşteriye süreyi kısaltır ve uygun olduğunda Avrupa ödeme ve belge akışlarını kolaylaştırır.",
+      "Şu anda Bulgaristan, Yunanistan ve Romanya için fulfilment sunuyoruz. Türkiye’den AB’ye ihracatta Bulgaristan’dan fulfilment birçok hatta müşteri transit’ini kısaltır ve uygun olduğunda Avrupa ödeme ve belge akışlarını kolaylaştırır.",
     turkeyPoints: [
       "AB topraklarında depo ve sevkiyat",
       "Birçok hatta yalnızca Türkiye fulfilment’ına göre daha kısa müşteri transit’i",
@@ -224,14 +224,14 @@ export default {
     mailLines: { name: "Ad", company: "Şirket", email: "E‑posta", phone: "Tel." },
   },
   seo: {
-    title: "PickPackHub · AB için 3PL ve e‑ticaret fulfilment | Bulgaristan",
+    title: "PickPackHub · 3PL ve e‑ticaret fulfilment | Bulgaristan, Yunanistan, Romanya",
     description:
-      "PickPackHub — Bulgaristan’dan AB odaklı 3PL: depolama, sipariş karşılama, iadeler, kargo (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Teklif talebi.",
-    keywords: "PickPackHub, pickpackhub, 3PL Bulgaristan, AB fulfilment, e‑ticaret, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
+      "PickPackHub — Bulgaristan’dan 3PL. Şu anda Bulgaristan, Yunanistan ve Romanya: depolama, sipariş karşılama, iadeler, kargo (Econt, Speedy, DPD, GLS, DHL), OMS/WMS, Shopify, WooCommerce, eMAG, Amazon. Teklif talebi.",
+    keywords: "PickPackHub, pickpackhub, 3PL Bulgaristan, Yunanistan, Romanya, AB fulfilment, e‑ticaret, Econt, Speedy, DPD, GLS, DHL, OMS, WMS",
   },
   footer: {
     title: "PickPackHub — lojistik ve sipariş karşılama",
-    subtitle: "Bulgaristan · AB e‑ticareti için 3PL",
+    subtitle: "Bulgaristan, Yunanistan, Romanya · AB e‑ticareti için 3PL",
     copyright: "© {year} PickPackHub · 2024–2026",
   },
 };
