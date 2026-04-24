@@ -4,8 +4,10 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
-export VITE_BASE_PATH="${VITE_BASE_PATH:-/pickpackhub/}"
-export VITE_PUBLIC_SITE_URL="${VITE_PUBLIC_SITE_URL:-https://ademtsranchaliev.github.io/pickpackhub}"
+# Custom domain (root): base "/" and your canonical URL. For github.io project pages instead, run:
+#   VITE_BASE_PATH=/pickpackhub/ VITE_PUBLIC_SITE_URL=https://ademtsranchaliev.github.io/pickpackhub ./scripts/deploy-github-pages.sh
+export VITE_BASE_PATH="${VITE_BASE_PATH:-/}"
+export VITE_PUBLIC_SITE_URL="${VITE_PUBLIC_SITE_URL:-https://pickpackhub.eu}"
 
 npm ci
 npm run build
