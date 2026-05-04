@@ -11,7 +11,7 @@ npm run dev
 
 Build: `npm run build` → output in `dist/`.
 
-Optional: copy `.env.example` to `.env` and set `VITE_PUBLIC_SITE_URL` for correct canonical URLs.
+Optional: copy `.env.example` to `.env` and set `VITE_PUBLIC_SITE_URL` for correct canonical URLs. For the contact form to **send email in the browser** (no `mailto:`), get a free key at [Web3Forms](https://web3forms.com), set the destination inbox to `sales@pickpackhub.eu`, and add **`VITE_WEB3FORMS_ACCESS_KEY`** to `.env` and to your host’s build environment (then rebuild).
 
 ---
 

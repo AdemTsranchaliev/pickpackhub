@@ -10,7 +10,11 @@ import {
   Stack,
   Alert,
   Snackbar,
-  MenuItem,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  Radio,
+  RadioGroup,
 } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 import EmailOutlined from "@mui/icons-material/EmailOutlined";
@@ -71,38 +75,84 @@ function iconShellSx(theme) {
   };
 }
 
+const WEB3_ENDPOINT = "https://api.web3forms.com/submit";
+
+function buildInquiryBody(form, m) {
+  const L = m.contact.mailLines;
+  const volumeLabel = m.contact.volumeTiers[form.volumeTier] ?? form.volumeTier;
+  return [
+    `${L.name}: ${form.name}`,
+    `${L.company}: ${form.company}`,
+    `${L.email}: ${form.email}`,
+    `${L.phone}: ${form.phone}`,
+    `${L.volume}: ${volumeLabel}`,
+    "",
+    form.message,
+  ].join("\n");
+}
+
 export default function Contact() {
   const { m } = useI18n();
   const [form, setForm] = useState(initial);
-  const [toast, setToast] = useState({ open: false, message: "" });
+  const [toast, setToast] = useState({ open: false, message: "", severity: "info" });
+  const [sending, setSending] = useState(false);
+
+  const web3Key = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY?.trim();
+  const usesDirectSend = Boolean(web3Key);
 
   function handleChange(e) {
     const { name, value } = e.target;
     setForm((f) => ({ ...f, [name]: value }));
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (!form.email.trim() || !form.message.trim() || !form.volumeTier) {
-      setToast({ open: true, message: m.contact.validation });
+      setToast({ open: true, message: m.contact.validation, severity: "warning" });
       return;
     }
-    const subject = encodeURIComponent(form.name.trim() ? `${BRAND_NAME} — ${form.name.trim()}` : m.contact.mailSubject);
-    const L = m.contact.mailLines;
-    const volumeLabel = m.contact.volumeTiers[form.volumeTier] ?? form.volumeTier;
-    const body = encodeURIComponent(
-      [
-        `${L.name}: ${form.name}`,
-        `${L.company}: ${form.company}`,
-        `${L.email}: ${form.email}`,
-        `${L.phone}: ${form.phone}`,
-        `${L.volume}: ${volumeLabel}`,
-        "",
-        form.message,
-      ].join("\n")
-    );
-    window.location.href = `mailto:${SALES_EMAIL}?subject=${subject}&body=${body}`;
-    setToast({ open: true, message: m.contact.toastClient });
+    const subjectLine = form.name.trim() ? `${BRAND_NAME} — ${form.name.trim()}` : m.contact.mailSubject;
+    const bodyText = buildInquiryBody(form, m);
+
+    if (!usesDirectSend) {
+      const subject = encodeURIComponent(subjectLine);
+      const body = encodeURIComponent(bodyText);
+      window.location.href = `mailto:${SALES_EMAIL}?subject=${subject}&body=${body}`;
+      setToast({ open: true, message: m.contact.toastClient, severity: "info" });
+      return;
+    }
+
+    setSending(true);
+    try {
+      const res = await fetch(WEB3_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: web3Key,
+          subject: subjectLine,
+          from_name: form.name.trim() || BRAND_NAME,
+          name: form.name.trim(),
+          email: form.email.trim(),
+          message: bodyText,
+          replyto: form.email.trim(),
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (data.success) {
+        setToast({ open: true, message: m.contact.submitSuccess, severity: "success" });
+        setForm(initial);
+      } else {
+        setToast({
+          open: true,
+          message: typeof data.message === "string" ? data.message : m.contact.submitError,
+          severity: "error",
+        });
+      }
+    } catch {
+      setToast({ open: true, message: m.contact.submitError, severity: "error" });
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -214,26 +264,41 @@ export default function Contact() {
                       <TextField fullWidth label={m.contact.labelPhone} name="phone" value={form.phone} onChange={handleChange} sx={(theme) => fieldSx(theme)} autoComplete="tel" />
                     </Grid>
                     <Grid item xs={12}>
-                      <TextField
-                        select
+                      <FormControl
+                        component="fieldset"
                         required
                         fullWidth
-                        label={m.contact.labelVolume}
-                        name="volumeTier"
-                        value={form.volumeTier}
-                        onChange={handleChange}
-                        sx={(theme) => fieldSx(theme)}
-                        SelectProps={{ displayEmpty: true }}
+                        sx={{
+                          p: 2,
+                          borderRadius: 2,
+                          border: "1px solid rgba(7, 16, 24, 0.12)",
+                          bgcolor: "rgba(7, 16, 24, 0.02)",
+                        }}
                       >
-                        <MenuItem value="">
-                          <em>{m.contact.volumePlaceholder}</em>
-                        </MenuItem>
-                        {VOLUME_KEYS.map((key) => (
-                          <MenuItem key={key} value={key}>
-                            {m.contact.volumeTiers[key]}
-                          </MenuItem>
-                        ))}
-                      </TextField>
+                        <FormLabel component="legend" sx={{ typography: "body2", fontWeight: 700, color: "text.primary", mb: 1 }}>
+                          {m.contact.labelVolume}
+                        </FormLabel>
+                        <RadioGroup name="volumeTier" value={form.volumeTier} onChange={handleChange}>
+                          {VOLUME_KEYS.map((key) => (
+                            <FormControlLabel
+                              key={key}
+                              value={key}
+                              control={<Radio size="small" color="secondary" />}
+                              label={m.contact.volumeTiers[key]}
+                              sx={{
+                                alignItems: "center",
+                                ml: 0,
+                                mr: 0,
+                                py: 0.35,
+                                borderRadius: 1,
+                                px: 0.5,
+                                mx: -0.5,
+                                "&:hover": { bgcolor: "action.hover" },
+                              }}
+                            />
+                          ))}
+                        </RadioGroup>
+                      </FormControl>
                     </Grid>
                     <Grid item xs={12}>
                       <TextField
@@ -249,11 +314,19 @@ export default function Contact() {
                       />
                     </Grid>
                     <Grid item xs={12}>
-                      <Button type="submit" variant="contained" color="secondary" size="large" fullWidth sx={{ py: 1.25, sm: { width: "auto", px: 3 } }}>
-                        {m.contact.submit}
+                      <Button
+                        type="submit"
+                        variant="contained"
+                        color="secondary"
+                        size="large"
+                        fullWidth
+                        disabled={sending}
+                        sx={{ py: 1.25, sm: { width: "auto", px: 3 } }}
+                      >
+                        {sending ? m.contact.sending : m.contact.submit}
                       </Button>
                       <Typography variant="caption" display="block" color="text.secondary" sx={{ mt: 1.25 }}>
-                        {m.contact.submitHint}
+                        {usesDirectSend ? m.contact.submitHintDirect : m.contact.submitHintMailto}
                       </Typography>
                     </Grid>
                   </Grid>
@@ -269,7 +342,11 @@ export default function Contact() {
         onClose={() => setToast({ ...toast, open: false })}
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
       >
-        <Alert severity="info" onClose={() => setToast({ ...toast, open: false })} sx={{ maxWidth: { xs: "100%", sm: 400 } }}>
+        <Alert
+          severity={toast.severity}
+          onClose={() => setToast({ ...toast, open: false })}
+          sx={{ maxWidth: { xs: "100%", sm: 400 } }}
+        >
           {toast.message}
         </Alert>
       </Snackbar>
