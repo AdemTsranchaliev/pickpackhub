@@ -11,7 +11,13 @@ npm run dev
 
 Build: `npm run build` → output in `dist/`.
 
-Optional: copy `.env.example` to `.env` and set `VITE_PUBLIC_SITE_URL` for correct canonical URLs. For the contact form to **send email in the browser** (no `mailto:`), get a free key at [Web3Forms](https://web3forms.com), set the destination inbox to `sales@pickpackhub.eu`, and add **`VITE_WEB3FORMS_ACCESS_KEY`** to `.env` and to your host’s build environment (then rebuild).
+Optional: copy `.env.example` to `.env` and set `VITE_PUBLIC_SITE_URL` for correct canonical URLs.
+
+**Contact form & email:** The form only **sends mail through the network** if the static build includes a **Web3Forms** access key. Without it, the site falls back to **`mailto:`** (opens the visitor’s email app — it does **not** send from your server). To fix “email not sending”:
+
+1. Create a key at [web3forms.com](https://web3forms.com) and set the notification inbox to **`sales@pickpackhub.eu`**.  
+2. **Local / script deploy:** put the key in **`.env.production.local`** (gitignored) as `VITE_WEB3FORMS_ACCESS_KEY=...` or run `export VITE_WEB3FORMS_ACCESS_KEY='...'` before `./scripts/deploy-github-pages.sh`.  
+3. **GitHub Actions deploy:** in the repo go to **Settings → Secrets and variables → Actions → New repository secret**, name **`VITE_WEB3FORMS_ACCESS_KEY`**, value = your key. The workflow passes it into `npm run build`. Redeploy (**Actions** → run workflow, or push to `main`).
 
 ---
 
