@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react";
-import { BRAND_NAME, CONTACT_EMAIL } from "../brand.js";
+import { BRAND_NAME, SALES_EMAIL, CONTACT_PHONE_E164 } from "../brand.js";
 import { useI18n } from "../i18n/I18nContext.jsx";
 import { messages } from "../i18n/messages.js";
 import { DEFAULT_LOCALE, LOCALE_OPTIONS } from "../i18n/locales.js";
@@ -118,7 +118,8 @@ export default function SeoHead() {
           name: BRAND_NAME,
           url: SITE_URL,
           logo: logoUrl,
-          email: CONTACT_EMAIL,
+          email: SALES_EMAIL,
+          telephone: CONTACT_PHONE_E164,
           areaServed: ["Bulgaria", "Greece", "Romania", "European Union"],
           knowsAbout: ["Third-party logistics", "E-commerce fulfilment", "Warehousing", "Cross-border EU shipping"],
         },

@@ -46,6 +46,47 @@ export default function ValueProposition() {
         <Typography color="text.secondary" sx={{ maxWidth: 520, mb: 3, fontSize: { xs: "0.95rem", sm: "1rem" }, lineHeight: 1.55 }}>
           {m.why.intro}
         </Typography>
+        {m.why.promo ? (
+          <Paper
+            elevation={0}
+            sx={{
+              mb: { xs: 3, sm: 4 },
+              p: { xs: 2.25, sm: 2.75 },
+              borderRadius: 3,
+              border: "1px solid rgba(7, 16, 24, 0.1)",
+              borderLeft: (theme) => `4px solid ${theme.palette.secondary.main}`,
+              background: (theme) =>
+                `linear-gradient(120deg, ${alpha(theme.palette.secondary.main, 0.08)} 0%, #fff 38%, ${alpha(theme.palette.primary.main, 0.04)} 100%)`,
+            }}
+          >
+            <Typography
+              variant="overline"
+              color="secondary"
+              sx={{ display: "block", fontWeight: 800, letterSpacing: 1.5, mb: 0.5 }}
+            >
+              {m.why.promo.badge}
+            </Typography>
+            <Typography variant="h6" sx={{ fontWeight: 800, mb: 1.25, fontSize: { xs: "1.05rem", sm: "1.2rem" } }}>
+              {m.why.promo.title}
+            </Typography>
+            <Box component="ul" sx={{ m: 0, pl: 2.25, mb: 1.25 }}>
+              {m.why.promo.bullets.map((line) => (
+                <Typography
+                  key={line}
+                  component="li"
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ lineHeight: 1.55, mb: 0.75, "&:last-of-type": { mb: 0 } }}
+                >
+                  {line}
+                </Typography>
+              ))}
+            </Box>
+            <Typography variant="caption" color="text.secondary" sx={{ display: "block", lineHeight: 1.5, opacity: 0.92 }}>
+              {m.why.promo.footnote}
+            </Typography>
+          </Paper>
+        ) : null}
         <Grid container spacing={{ xs: 2, sm: 3 }}>
           {m.why.pillars.map((p, i) => (
             <Grid item xs={12} md={4} key={p.title}>

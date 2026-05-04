@@ -10,15 +10,18 @@ import {
   Stack,
   Alert,
   Snackbar,
+  MenuItem,
 } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 import EmailOutlined from "@mui/icons-material/EmailOutlined";
 import PhoneOutlined from "@mui/icons-material/PhoneOutlined";
 import LocationOnOutlined from "@mui/icons-material/LocationOnOutlined";
 import { useI18n } from "../i18n/I18nContext.jsx";
-import { BRAND_NAME, CONTACT_EMAIL } from "../brand.js";
+import { BRAND_NAME, SALES_EMAIL, CONTACT_PHONE, CONTACT_PHONE_E164 } from "../brand.js";
 
-const initial = { name: "", company: "", email: "", phone: "", message: "" };
+const VOLUME_KEYS = ["up100", "r100_500", "r500_2000", "over2000"];
+
+const initial = { name: "", company: "", email: "", phone: "", volumeTier: "", message: "" };
 
 function fieldSx(theme) {
   return {
@@ -80,16 +83,25 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!form.email.trim() || !form.message.trim()) {
+    if (!form.email.trim() || !form.message.trim() || !form.volumeTier) {
       setToast({ open: true, message: m.contact.validation });
       return;
     }
     const subject = encodeURIComponent(form.name.trim() ? `${BRAND_NAME} — ${form.name.trim()}` : m.contact.mailSubject);
     const L = m.contact.mailLines;
+    const volumeLabel = m.contact.volumeTiers[form.volumeTier] ?? form.volumeTier;
     const body = encodeURIComponent(
-      [`${L.name}: ${form.name}`, `${L.company}: ${form.company}`, `${L.email}: ${form.email}`, `${L.phone}: ${form.phone}`, "", form.message].join("\n")
+      [
+        `${L.name}: ${form.name}`,
+        `${L.company}: ${form.company}`,
+        `${L.email}: ${form.email}`,
+        `${L.phone}: ${form.phone}`,
+        `${L.volume}: ${volumeLabel}`,
+        "",
+        form.message,
+      ].join("\n")
     );
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${SALES_EMAIL}?subject=${subject}&body=${body}`;
     setToast({ open: true, message: m.contact.toastClient });
   }
 
@@ -138,7 +150,7 @@ export default function Contact() {
                     {m.contact.email}
                   </Typography>
                   <Typography variant="body2" color="text.secondary" sx={{ wordBreak: "break-all" }}>
-                    {CONTACT_EMAIL}
+                    {SALES_EMAIL}
                   </Typography>
                 </Box>
               </Paper>
@@ -150,8 +162,14 @@ export default function Contact() {
                   <Typography variant="subtitle2" fontWeight={700}>
                     {m.contact.phone}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {m.contact.phonePlaceholder}
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    component="a"
+                    href={`tel:${CONTACT_PHONE_E164}`}
+                    sx={{ color: "text.secondary", textDecoration: "none", "&:hover": { textDecoration: "underline" } }}
+                  >
+                    {CONTACT_PHONE}
                   </Typography>
                 </Box>
               </Paper>
@@ -194,6 +212,28 @@ export default function Contact() {
                     </Grid>
                     <Grid item xs={12} sm={6}>
                       <TextField fullWidth label={m.contact.labelPhone} name="phone" value={form.phone} onChange={handleChange} sx={(theme) => fieldSx(theme)} autoComplete="tel" />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        select
+                        required
+                        fullWidth
+                        label={m.contact.labelVolume}
+                        name="volumeTier"
+                        value={form.volumeTier}
+                        onChange={handleChange}
+                        sx={(theme) => fieldSx(theme)}
+                        SelectProps={{ displayEmpty: true }}
+                      >
+                        <MenuItem value="">
+                          <em>{m.contact.volumePlaceholder}</em>
+                        </MenuItem>
+                        {VOLUME_KEYS.map((key) => (
+                          <MenuItem key={key} value={key}>
+                            {m.contact.volumeTiers[key]}
+                          </MenuItem>
+                        ))}
+                      </TextField>
                     </Grid>
                     <Grid item xs={12}>
                       <TextField

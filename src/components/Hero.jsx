@@ -30,9 +30,32 @@ export default function Hero() {
         pb: { xs: 8, sm: 10, md: 14 },
         overflow: "hidden",
         color: "common.white",
-        background: "linear-gradient(155deg, #071a2e 0%, #0c3557 38%, #134e7a 68%, #0e5c73 100%)",
+        bgcolor: "#071a2e",
       }}
     >
+      <Box
+        aria-hidden
+        sx={{
+          position: "absolute",
+          inset: 0,
+          backgroundSize: "cover",
+          backgroundPosition: "center 28%",
+          backgroundRepeat: "no-repeat",
+          backgroundImage: {
+            xs: `image-set(url("/images/facility-sm.webp") type("image/webp"), url("/images/facility-sm.jpg") type("image/jpeg"))`,
+            md: `image-set(url("/images/facility.webp") type("image/webp"), url("/images/facility.jpg") type("image/jpeg"))`,
+          },
+        }}
+      />
+      <Box
+        aria-hidden
+        sx={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(155deg, rgba(7, 26, 46, 0.93) 0%, rgba(12, 53, 87, 0.84) 38%, rgba(19, 78, 122, 0.78) 68%, rgba(14, 92, 115, 0.74) 100%)",
+        }}
+      />
       <Box
         sx={{
           position: "absolute",
