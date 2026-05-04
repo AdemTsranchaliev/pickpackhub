@@ -25,25 +25,26 @@ Optional: copy `.env.example` to `.env` and set `VITE_PUBLIC_SITE_URL` for corre
 
 Custom domain: add it in Netlify, then set `VITE_PUBLIC_SITE_URL` to `https://pickpackhub.com` (or your domain).
 
-### Option B — GitHub Pages (deploy from branch `gh-pages`)
+### Option B — GitHub Pages (branch `gh-pages`)
 
-**Live URL:** **https://ademtsranchaliev.github.io/pickpackhub/**
+**Public URL (custom domain, `public/CNAME`):** **https://pickpackhub.eu**  
+*(Докато DNS към GitHub не е настроен, `https://ademtsranchaliev.github.io/pickpackhub/` пренасочва към домейна, ако той е активиран в **Settings → Pages**.)*
 
-This repo uses **Deploy from a branch** → branch **`gh-pages`**, folder **`/`** (not GitHub Actions), so updates work without pushing workflow files.
+On every push to **`main`**, **GitHub Actions** runs **Deploy GitHub Pages** (`.github/workflows/deploy-gh-pages.yml`): production build (root `base`, `VITE_PUBLIC_SITE_URL=https://pickpackhub.eu`), patches `robots.txt` / `sitemap.xml`, pushes **`gh-pages`**.
 
-**Publish / update the public site** (from a clone with push access):
+**First-time:** **Settings → Pages** → **Deploy from a branch** → **`gh-pages`** / **`/`** → Save. In **Settings → Pages** (or **Domains**), add **pickpackhub.eu** and follow DNS (A/AAAA or CNAME) for GitHub Pages.
+
+**Manual deploy** (optional):
 
 ```bash
 chmod +x scripts/deploy-github-pages.sh
-./scripts/deploy-github-pages.sh
+VITE_PUBLIC_SITE_URL=https://pickpackhub.eu ./scripts/deploy-github-pages.sh
 ```
 
-The script runs `npm ci`, builds with `VITE_BASE_PATH=/pickpackhub/`, patches `robots.txt` / `sitemap.xml` for the `github.io` URL, and **force-pushes** the `dist/` output to `gh-pages`.
-
-**First-time / Settings check:** Repo → **Settings → Pages** → **Build and deployment** → source **Deploy from a branch** → branch **`gh-pages`**, folder **`/`** → Save.
+Use `VITE_BASE_PATH` only if you publish without a custom domain (e.g. `VITE_BASE_PATH=/pickpackhub/` for `*.github.io/pickpackhub/` only).
 
 ---
 
 ## GitHub token note
 
-Some tools cannot `git push` files under `.github/workflows/` without extra **workflow** scope. The `gh-pages` branch deploy avoids that. Netlify also avoids it.
+GitHub Actions uses `GITHUB_TOKEN` to update `gh-pages`. Pushes from your machine need **repo** scope. Netlify deploy does not require a GitHub token for hosting.
