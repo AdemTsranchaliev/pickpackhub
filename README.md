@@ -34,6 +34,8 @@ On every push to **`main`**, **GitHub Actions** runs **Deploy GitHub Pages** (`.
 
 **First-time:** **Settings → Pages** → **Deploy from a branch** → **`gh-pages`** / **`/`** → Save. In **Settings → Pages** (or **Domains**), add **pickpackhub.eu** and follow DNS (A/AAAA or CNAME) for GitHub Pages.
 
+**Ако GitHub пише „not published“ или виждаш 404:** източникът трябва да е **Deploy from a branch** (клон `gh-pages`), **не** само „GitHub Actions“ като *единствен* източник — workflow-ът **качва** `gh-pages`; Pages трябва да го **сервира** от клона. Ръчно обновяване: **Actions** → **Deploy GitHub Pages** → **Run workflow** (след `workflow_dispatch`).
+
 **Manual deploy** (optional):
 
 ```bash
