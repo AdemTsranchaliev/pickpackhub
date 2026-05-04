@@ -19,6 +19,8 @@ Optional: copy `.env.example` to `.env` and set `VITE_PUBLIC_SITE_URL` for corre
 2. **Local / script deploy:** put the key in **`.env.production.local`** (gitignored) as `VITE_WEB3FORMS_ACCESS_KEY=...` or run `export VITE_WEB3FORMS_ACCESS_KEY='...'` before `./scripts/deploy-github-pages.sh`.  
 3. **GitHub Actions deploy:** in the repo go to **Settings → Secrets and variables → Actions → New repository secret**, name **`VITE_WEB3FORMS_ACCESS_KEY`**, value = your key. The workflow passes it into `npm run build`. Redeploy (**Actions** → run workflow, or push to `main`).
 
+**Zoho Mail:** The site does not connect to Zoho’s API. **Web3Forms** only needs a **destination address** — set it to **`sales@pickpackhub.eu`**. If that mailbox is on **Zoho Mail**, form submissions land in the same Zoho inbox as regular mail. On first tests, check **Spam**; add a filter if notifications are filtered.
+
 ---
 
 ## Go online
